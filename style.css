@@ -1,0 +1,186 @@
+
+@font-face {
+    font-family: 'MarioKart';
+    src: url('./Mario-Kart-DS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header h1 {
+    font-family: 'MarioKart', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 1000px;
+}
+
+header {
+    width: 80vw;
+    background: rgb(13, 17, 55);
+    color: white;
+    padding: 30px 8%;
+    border-bottom: 4px solid rgb(0, 0, 0);
+}
+
+header h1 {
+    font-family: 'MarioKart', sans-serif;
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: white;
+}
+
+header p {
+    color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.titulo-secao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    margin-bottom: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.titulo-secao p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px;
+    background: rgb(13, 17, 55);
+    color: rgb(239, 235, 236);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(0, 0, 0);
+}
+
+.listar-jogos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#mensagemVazia {
+    color: rgb(255, 255, 255);
+}
+
+.card-disco {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+.capa {
+    height: 170px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-disco {
+    padding: 20px;
+}
+
+.info-disco h3 {
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+.info-disco p {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    overflow-wrap: anywhere;
+    font-size: 17px;
+}
+
+.preco {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+dialog {
+    width: min(90%, 420px);
+    margin: auto;
+    padding: 25px;
+    border: none;
+    border-radius: 12px;
+}
+
+dialog::backdrop {
+    background: rgb(0, 0, 0);
+}
+
+dialog h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 14px 0 16px;
+}
+
+form input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+button.cancelar {
+    background: rgb(13, 17, 55);
+    color: rgb(255, 255, 255);
+}
+
+button.cancelar:hover {
+    background: rgb(13, 17, 55);
+}
+
+.capa img {
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+    display: block;
+}
