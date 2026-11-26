@@ -1,4 +1,10 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'MarioKart';
     src: url('./Mario-Kart-DS.ttf') format('truetype');
@@ -6,21 +12,13 @@
     font-style: normal;
 }
 
-header h1 {
-    font-family: 'MarioKart', sans-serif;
-    font-size: 32px;
-    color: white;
-}
-
 body {
     font-family: Arial, sans-serif;
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    width: 1000px;
 }
 
 header {
-    width: 80vw;
     background: rgb(13, 17, 55);
     color: white;
     padding: 30px 8%;
@@ -41,29 +39,25 @@ header p {
 
 .container {
     max-width: 1100px;
-    margin: 30px auto;
+    margin: 4px auto;
     padding: 0 20px;
 }
 
 .titulo-secao {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-bottom: 25px;
 }
 
 .titulo-secao h2 {
     margin-bottom: 8px;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
 }
 
 .titulo-secao p {
     color: rgb(255, 255, 255);
-    font-size: 18px;
 }
 
 button {
@@ -81,11 +75,9 @@ button:hover {
 }
 
 .listar-jogos {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
 }
 
 #mensagemVazia {
@@ -110,26 +102,24 @@ button:hover {
 }
 
 .info-disco {
-    padding: 20px;
+    padding: 18px;
 }
 
 .info-disco h3 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: rgb(0, 0, 0);
-    font-size: 22px;
 }
 
 .info-disco p {
-    margin-top: 10px;
+    margin-top: 8px;
     color: rgb(0, 0, 0);
     overflow-wrap: anywhere;
-    font-size: 17px;
 }
 
 .preco {
     display: block;
     color: rgb(0, 0, 0);
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 16px;
 }
 
@@ -142,16 +132,18 @@ dialog {
 }
 
 dialog::backdrop {
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 dialog h2 {
     margin-bottom: 20px;
+    color: rgb(0, 0, 0);
 }
 
 form label {
     display: block;
     margin: 14px 0 16px;
+    color: rgb(0, 0, 0);
 }
 
 form input {
@@ -175,12 +167,32 @@ button.cancelar {
 }
 
 button.cancelar:hover {
-    background: rgb(13, 17, 55);
+    background: rgb(0, 0, 0);
 }
 
 .capa img {
-    width: 95%;
-    height: 95%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
+}
+
+.acoes-card {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.acoes-card button {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+button.btn-editar {
+    background: rgb(13, 17, 55);
+}
+
+button.btn-excluir {
+    background: rgb(13, 17, 55);
 }
